@@ -51,8 +51,6 @@ namespace XBMPConverter.Images
             Unk2 = _reader.ReadInt32();
             Unk3 = _reader.ReadInt32();
             Unk4 = _reader.ReadInt32();
-            MessageBox.Show(Unk0 + " " + Unk1 + " " + Width + " " + Height + " " + Width2 + " " + Unk2 + " " + Unk3 +
-                            " " + Unk4);
         }
 
 
