@@ -25,9 +25,9 @@ namespace XbmpConversion.Windows
         private void HandleLoad(object sender, RoutedEventArgs e)
         {
             var currentPath = Directory.GetCurrentDirectory();
-            if (!Directory.Exists(Path.Combine(currentPath, "bmp")))
+            if (!Directory.Exists(Path.Combine(currentPath, "output")))
             {
-                Directory.CreateDirectory(Path.Combine(currentPath, "bmp"));
+                Directory.CreateDirectory(Path.Combine(currentPath, "output"));
                 Directory.CreateDirectory(Path.Combine(currentPath, "xbmp"));
             }
             
@@ -70,10 +70,14 @@ namespace XbmpConversion.Windows
             var dgv = (DataGrid)sender;
             if (dgv != null)
             {
-                var fileModel = (FileViewModel)e.AddedItems[0];
-                var vm = this.DataContext as MainWindowViewModel;
-                vm?.UpdateStats(fileModel?.Path);
-                e.Handled = true;
+                if (e.AddedItems.Count > 0)
+                {
+                    var fileModel = (FileViewModel)e.AddedItems[0];
+                    var vm = this.DataContext as MainWindowViewModel;
+                    vm?.UpdateStats(fileModel?.Path);
+                    e.Handled = true;
+                }
+              
             }
         }
     }

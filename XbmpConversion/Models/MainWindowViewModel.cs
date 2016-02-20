@@ -125,7 +125,7 @@ namespace XbmpConversion.Models
                         var fileNameWithoutExtension = Path.GetFileNameWithoutExtension(image.Path);
                         if (extension != null && extension.Equals(".xbmp"))
                         {
-                            image.Xbmp.Image.Save("./bmp/" + fileNameWithoutExtension + ".bmp", ImageFormat.Bmp);
+                            image.Xbmp.Image.Save("./output/" + fileNameWithoutExtension + ".png", ImageFormat.Png);
                             image.Xbmp.Close();
                         }
                         else
