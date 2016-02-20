@@ -1,7 +1,6 @@
 ﻿using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Windows.Forms;
 
 namespace XBMPConverter.Images
 {
@@ -20,7 +19,10 @@ namespace XBMPConverter.Images
             Parent = parent;
         }
 
-
+        public string GetStats()
+        {
+            return "Unk0 " + Unk0 + "\nUnk1 " + Unk1 + "\nWidth " + Width + "\nHeight " + Height + "\nWidth2 " + Width2 + "\nUnk2 " + Unk2 + "\nUnk3 " + Unk3 + "\nUnk4 " + Unk4;
+        }
         /// <summary>
         ///     Set image that you wish to convert ot the XBMP format
         /// </summary>
@@ -123,6 +125,12 @@ namespace XBMPConverter.Images
             SaveHeader();
             SaveImage();
             _writer.Close();
+        }
+
+        public void Close()
+        {
+            _writer?.Close();
+            _reader?.Close();
         }
     }
 }

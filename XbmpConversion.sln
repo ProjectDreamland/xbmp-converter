@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XBMPConverter", "XBMPConverter\XBMPConverter.csproj", "{46C5AF62-2B56-44D7-9E3F-E78844D51538}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XbmpConversion", "XbmpConversion\XbmpConversion.csproj", "{FB4EA313-2593-45D7-B8B4-99BAB8E3C247}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{46C5AF62-2B56-44D7-9E3F-E78844D51538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46C5AF62-2B56-44D7-9E3F-E78844D51538}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46C5AF62-2B56-44D7-9E3F-E78844D51538}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46C5AF62-2B56-44D7-9E3F-E78844D51538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4EA313-2593-45D7-B8B4-99BAB8E3C247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4EA313-2593-45D7-B8B4-99BAB8E3C247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4EA313-2593-45D7-B8B4-99BAB8E3C247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4EA313-2593-45D7-B8B4-99BAB8E3C247}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
