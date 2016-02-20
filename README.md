@@ -1,10 +1,8 @@
 # xbmp-converter
 Tool for converting the XBMP files to any image format and back 
 
+![](https://i.imgur.com/XOY1Hhz.gif)
 
-### TODO 
-
-GUI 
 
 
 ### What is this
